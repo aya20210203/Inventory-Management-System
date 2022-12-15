@@ -8,17 +8,11 @@ package com.mycompany.inventory.mangment.system;
  *
  * @author asus
  */
-public class categoryy {
-    private int categoryId;
+public class categoryy /*implements acessable*/ {
+    private static int categoryId;
     private String categoryName;
 
-    public int getCategoryId() {
-        return categoryId;
-    }
-    
-    public void setCategoryId(int categoryId) {
-        this.categoryId = categoryId;
-    }
+  
 
     public String getCategoryName() {
         return categoryName;
@@ -26,14 +20,15 @@ public class categoryy {
 
     public void setCategoryName(String categoryName) {
         this.categoryName = categoryName;
+        categoryId++;
     }
     public void addCategory(String categoryName){
         
     }
-   // public int deleteCategory(String categoryName){
+   // public int delete(String categoryName){
         
     //}
-   // ResultSet showCategory(){
+   // ResultSet show(){
         
   //  }
 

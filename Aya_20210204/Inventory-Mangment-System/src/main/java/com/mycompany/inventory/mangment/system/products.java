@@ -8,23 +8,16 @@ package com.mycompany.inventory.mangment.system;
  *
  * @author asus
  */
-public class products {
-    private int productId;
+public class products extends categoryy /*implements acessable*/ {
+    private static int productId;
     private String productName;
     private int price;
     private int quantity;
     private String productionDate;
     private String expirationDate;
     private int rate;
-    private String categoryName;
+    
 
-    public int getProductId() {
-        return productId;
-    }
-
-    public void setProductId(int productId) {
-        this.productId = productId;
-    }
 
     public String getProductName() {
         return productName;
@@ -32,6 +25,7 @@ public class products {
 
     public void setProductName(String productName) {
         this.productName = productName;
+        productId++;
     }
 
     public int getPrice() {
@@ -73,26 +67,18 @@ public class products {
     public void setRate(int rate) {
         this.rate = rate;
     }
-
-    public String getCategoryName() {
-        return categoryName;
-    }
-
-    public void setCategoryName(String categoryName) {
-        this.categoryName = categoryName;
-    }
     public void addProduct(String productName,int price,int quantity,String categoryName,String expirationDate,String productionDate){
         
     }
     public void updateProduct(String productName,int price,int quantity,String categoryName,String expirationDate,String productionDate){
     }
-   // public int deleteproduct(String productName){
+   // public int delete(String productName){
         
    // }
     //public ResultSet search(String productName){
         
    // }
-    //public ResultSet showProducts(){
+    //public ResultSet show(){
         
     //}
 }

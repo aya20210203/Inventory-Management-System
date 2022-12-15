@@ -9,5 +9,6 @@ package com.mycompany.inventory.mangment.system;
  * @author asus
  */
 public interface acessable {
-    
+    public abstract int delete();
+  //  public abstract ResultSet show();
 }

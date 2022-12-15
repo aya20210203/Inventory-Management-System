@@ -8,7 +8,7 @@ package com.mycompany.inventory.mangment.system;
  *
  * @author asus
  */
-public class notifayExpiration extends products {
+public class notifayExpiration extends products/* implements acessable*/ {
   // public ResutSet show(){
        
   // }

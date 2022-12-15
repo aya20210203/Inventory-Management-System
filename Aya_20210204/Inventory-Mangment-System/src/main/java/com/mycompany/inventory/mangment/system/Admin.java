@@ -11,7 +11,7 @@ package com.mycompany.inventory.mangment.system;
 public class Admin {
     private String adminName;
     private int adminPassword;
-    private int adminId;
+    private static int adminId;
 
     public String getAdminName() {
         return adminName;
@@ -19,6 +19,7 @@ public class Admin {
 
     public void setAdminName(String adminName) {
         this.adminName = adminName;
+        adminId++;
     }
 
     public int getAdminPassword() {

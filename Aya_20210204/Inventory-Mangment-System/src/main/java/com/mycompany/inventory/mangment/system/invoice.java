@@ -8,17 +8,11 @@ package com.mycompany.inventory.mangment.system;
  *
  * @author asus
  */
-public class invoice {
-  private  int clientId;
+public class invoice extends client{
+  
   private String []productName;
 
-    public int getClientId() {
-        return clientId;
-    }
-
-    public void setClientId(int clientId) {
-        this.clientId = clientId;
-    }
+   
 
     public String[] getProductName() {
         return productName;

@@ -8,33 +8,19 @@ package com.mycompany.inventory.mangment.system;
  *
  * @author asus
  */
-public class supplier {
-    private int supplierId;
+public class supplier extends products /*implements acessable*/{
+    private static int supplierId;
     private String supplierName;
-    private String productName;
+    
 
-    public int getSupplierId() {
-        return supplierId;
-    }
-
-    public void setSupplierId(int supplierId) {
-        this.supplierId = supplierId;
-    }
-
+   
     public String getSupplierName() {
         return supplierName;
     }
 
     public void setSupplierName(String supplierName) {
         this.supplierName = supplierName;
-    }
-
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
+        supplierId++;
     }
     public void addSupplier(String supplierName,String productName){
         
@@ -42,10 +28,10 @@ public class supplier {
     public void updateSupplier(String supplierName,String productName){
         
     }
-  //  public int deleteSupplier(supplierName){
+  //  public int delete(supplierName){
         
   //  }
-  //  public ResultSet showSupplier(){
+  //  public ResultSet show(){
         
     //}
     

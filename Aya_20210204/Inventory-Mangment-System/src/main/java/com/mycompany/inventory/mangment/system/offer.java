@@ -8,20 +8,14 @@ package com.mycompany.inventory.mangment.system;
  *
  * @author asus
  */
-public class offer {
-     private String productName;
+public class offer extends products /*implements acessable*/{
+    
      private int quantity;
      private String startDate;
      private String endDate;
      private int percentage;
 
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
+    
 
     public int getQuantity() {
         return quantity;
@@ -60,7 +54,7 @@ public class offer {
     public void updateOffer(String productName,int quantity,String startDate,String endDate,int percentage){
         
     }
-    //public int deleteOffer(String productname){
+    //public int delete(String productname){
         
     //}
     

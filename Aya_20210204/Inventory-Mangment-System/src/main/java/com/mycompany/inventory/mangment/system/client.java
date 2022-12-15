@@ -9,17 +9,11 @@ package com.mycompany.inventory.mangment.system;
  * @author asus
  */
 public class client {
-    private int clientId;
+    private static int clientId;
     private String email;
     private String password;
 
-    public int getClientId() {
-        return clientId;
-    }
-
-    public void setClientId(int clientId) {
-        this.clientId = clientId;
-    }
+   
 
     public String getEmail() {
         return email;
@@ -27,6 +21,7 @@ public class client {
 
     public void setEmail(String email) {
         this.email = email;
+        clientId++;
     }
 
     public String getPassword() {
